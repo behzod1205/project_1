@@ -1,61 +1,65 @@
+/* Umumiy sahifa */
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    /* align-items: center; */
-    background: #020024;
-
-    background: url("./assets/pic4.jpg") no-repeat center center/cover;
-
+  margin: 0;
+  height: 100vh;
+  background: url("./assets/pic4.jpg") no-repeat center center/cover;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
-
-.logo{
-    font-family: Montserrat;
-    color: rgb(8, 221, 249);
-    font-weight: 700;
-    font-size: 70px;
-    margin-left: 50px;
+/* Navbar qismi */
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* chap va o‘ng tarafga */
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.4); /* yarim shaffof fon */
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
 }
 
-.nav_wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 13px;
-    padding-right: 43px;
-    gap: 160px;
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 28px; /* 70px juda katta edi */
+  color: #08ddf9;
 }
 
-.nav_items{
-    display: flex;
+/* Menu itemlar */
+.nav_items .item {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.item {
-    display: flex;
-    gap: 80px;
+.item a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
-.item a{
-    font-family: Montserrat;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
+.item a:hover {
+  color: #08ddf9;
 }
 
-
-
-.icons button{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 10px;
-    color: aqua;
-    background-color: #020024;
+/* Logout tugma */
+.icons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  transition: transform 0.2s, opacity 0.3s;
 }
 
-.icons button:hover{
-    color: lime;
+.icons button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }

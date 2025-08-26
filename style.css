@@ -1,115 +1,112 @@
+/* Umumiy */
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background: #020024;
-
-    background: url("./assets/pic5.jpg") no-repeat center center/cover;
-
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* markazga gorizontal */
+  align-items: center;     /* markazga vertikal */
+  background: url("./assets/pic5.jpg") no-repeat center center/cover;
+  font-family: sans-serif;
+  color: #fafafb;
 }
 
+/* Form umumiy */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: rgba(5, 219, 252, 0.15);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    width: 300px;
-    margin-left: 677px;
-
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(130, 164, 213, 0.3);
-
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(5, 219, 252, 0.15);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 320px; /* responsiv */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(130, 164, 213, 0.3);
 }
 
-.signup_form{
-    display: none;
+.signup_form {
+  display: none;
 }
 
-.main_form{
-    margin-top: 20px;
+.l_form {
+  text-align: center;
+  color: aqua;
+  margin-bottom: 10px;
 }
 
-.l_form{
-    display: flex;
-    font-family: sans-serif;
-    align-items: center;
-    justify-content: center;
-    color: aqua;
+.member_id,
+.password,
+.sign_up {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
 }
 
-.member_id{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    font-size: 25px;
-    color: #fafafb;
+.input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
 }
 
-.password{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    font-size: 25px;
-    color: #fafafb;
+/* Forget password link */
+.fb a {
+  color: #f7f6f9;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.fb a{
-    display: flex;
-    color: rgb(247, 246, 249);
-    margin-top: 5px;
-    margin-bottom: 30px;
-    text-decoration: none;
+.fb a:hover {
+  color: aqua;
 }
 
-.fb a:hover{
-    color: aqua;
+/* Submit tugma */
+.submit {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  background: radial-gradient(
+    circle,
+    rgba(11, 48, 230, 1) 0%,
+    rgba(69, 243, 243, 1) 100%
+  );
+  transition: 0.3s;
 }
 
-.submit{
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
-    background: #0b30e6;
-    background: radial-gradient(circle, rgba(11, 48, 230, 1) 0%, rgba(69, 243, 243, 1) 100%, rgba(252, 70, 107, 1) 100%);
+.submit:hover {
+  opacity: 0.9;
 }
 
-
-
-.sign{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fafafb;
-    font-size: 20px;
-    gap: 10px;
-    margin-top: 20px;
+/* Sign in/up */
+.sign {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
 }
 
-.sign a{
-    color: aqua;
-    text-decoration: none;
+.sign a {
+  color: aqua;
+  text-decoration: none;
 }
 
-.sign a:hover{
-    color: lime;
+.sign a:hover {
+  color: lime;
 }
 
-.input{
-    height: 20px;
+/* Xatolik va muvaffaqiyat xabarlari */
+#error {
+  color: red;
+  font-size: 14px;
 }
 
-.sign_up{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    font-size: 25px;
-    color: #fafafb;
+#acc_cr {
+  color: lime;
+  font-size: 14px;
 }
