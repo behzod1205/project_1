@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    background: #020024;
+
+    background: url("./assets/pic4.jpg") no-repeat center center/cover;
+
+}
+
+
+.logo{
+    font-family: Montserrat;
+    color: rgb(8, 221, 249);
+    font-weight: 700;
+    font-size: 70px;
+    margin-left: 50px;
+}
+
+.nav_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 13px;
+    padding-right: 43px;
+    gap: 160px;
+}
+
+.nav_items{
+    display: flex;
+}
+
+.item {
+    display: flex;
+    gap: 80px;
+}
+
+.item a{
+    font-family: Montserrat;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.icons button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: aqua;
+    background-color: #020024;
+}
+
+.icons button:hover{
+    color: lime;
+}

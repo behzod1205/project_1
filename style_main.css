@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #020024;
+
+    background: url("./assets/pic3.jpg") no-repeat center center/cover;
+
+}
+
+
+.hero_wrapper .welcome{
+    display: flex;
+    color: aqua;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 150px;
+}
+
+.hero_wrapper .hero{
+    display: flex;
+    color: blue;
+    margin-left: 50px;
+}
+
+.hero_wrapper .desc{
+    display: flex;
+    color: blueviolet;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.button #loginbtn{
+    color: aqua;
+    background-color: #050147;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 50px;
+}

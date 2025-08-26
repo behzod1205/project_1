@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOI Bank</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    
+
+
+    <form class="login_form">
+
+        <div class="main_form">
+            <h1 class="l_form">Welcome To IOI</h1>
+
+
+            <div class="member_id">
+                <label for="id_member">Enter Your ID</label>
+                <input class="input" type="text" name="id_member" id="id_member" required>
+            </div>
+
+        <div class="password">
+            <label for="password">Password</label>
+            <input class="input" type="password" name="password" id="password" required>
+        </div>
+
+        <div class="fb">
+            <a href="">
+            <span>Forget Password?</span>
+        </a>
+        </div>
+        <input class="submit" type="submit" value="Login">
+
+        <div class="sign">
+            <h4>Not a member?</h4>
+        <a href="#" id="showSignup">
+            <span>Sign Up Now</span>
+        </a>
+        </div>
+        </div>
+
+    </form>
+
+
+
+    <form class="signup_form">
+
+        <h1 class="l_form">Create Account</h1>
+
+
+        <div class="sign_up">
+            <label for="username">Username</label>
+            <input class="input" type="text" id="username" required>
+
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email">
+
+            <label for="newpassword">Password</label>
+            <input class="input" type="password" id="newpassword" required>
+
+            <label for="confirmpassword" >Confirm Password</label>
+            <input class="input" type="password" id="confirmpassword" required>
+
+            <p id="error" style="color: red; font-size: 20px; display: none">
+                Passwords do not match!
+            </p>
+
+            <p id="acc_cr" style="color: lime; font-size: 20px; display: none">
+                Account created successfully!
+            </p>
+
+            <input class="submit" type="submit" value="Sign Up">
+        </div>
+            
+
+        <div class="sign">
+            <span>Already a member?</span>
+        <a href="#" id="showLogin">Login</a>
+        </div>
+  </form>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
