@@ -1,27 +1,26 @@
-/* Umumiy */
 body {
   margin: 0;
   height: 100vh;
   display: flex;
-  justify-content: center; /* markazga gorizontal */
-  align-items: center;     /* markazga vertikal */
+  justify-content: center;
+  align-items: center;
   background: url("./assets/pic5.jpg") no-repeat center center/cover;
   font-family: sans-serif;
   color: #fafafb;
 }
 
-/* Form umumiy */
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   background: rgba(5, 219, 252, 0.15);
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   width: 100%;
-  max-width: 320px; /* responsiv */
-  backdrop-filter: blur(8px);
+  max-width: 320px;
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(130, 164, 213, 0.3);
 }
 
@@ -32,7 +31,7 @@ form {
 .l_form {
   text-align: center;
   color: aqua;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .member_id,
@@ -42,17 +41,19 @@ form {
   flex-direction: column;
   gap: 8px;
   font-size: 18px;
+  padding: 10px;
 }
 
 .input {
-  padding: 8px;
+  padding: 10px;
   border-radius: 6px;
   border: none;
   outline: none;
 }
 
-/* Forget password link */
+
 .fb a {
+  display: flex;
   color: #f7f6f9;
   text-decoration: none;
   font-size: 14px;
@@ -62,7 +63,7 @@ form {
   color: aqua;
 }
 
-/* Submit tugma */
+
 .submit {
   padding: 10px;
   font-size: 16px;
@@ -83,7 +84,7 @@ form {
   opacity: 0.9;
 }
 
-/* Sign in/up */
+
 .sign {
   display: flex;
   justify-content: center;
@@ -100,7 +101,7 @@ form {
   color: lime;
 }
 
-/* Xatolik va muvaffaqiyat xabarlari */
+
 #error {
   color: red;
   font-size: 14px;
