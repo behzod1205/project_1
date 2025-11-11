@@ -1,0 +1,27 @@
+{
+  "name": "oio-bank",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/behzod1205/project_1#readme",
+  "bugs": {
+    "url": "https://github.com/behzod1205/project_1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behzod1205/project_1.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/Server/server.js",
+    "dev": "node --watch ./src/Server/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "pg": "^8.16.3"
+  }
+}
